@@ -5,7 +5,6 @@ import Plp from "./pages/Plp";
 import Pdp from "./pages/Pdp";
 import Signin from "./pages/Signin";
 import Error from "./pages/Error";
-
 import "./App.css";
 function App() {
   return (
@@ -14,6 +13,7 @@ function App() {
       <Route path="/plp" element={<Plp></Plp>}></Route>
       <Route path="/pdp/:id" element={<Pdp></Pdp>}></Route>
       <Route path="signin" element={<Signin></Signin>}></Route>
+
       <Route path="*" element={<Error></Error>}></Route>
     </Routes>
   );

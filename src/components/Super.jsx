@@ -115,7 +115,7 @@ function Super() {
       <div class="scroller-container">
         <div class="scroller">
           <div class="slide">
-            <div class="content bg-[#FEB786] h-[330px] mt-2 flex justify-between">
+            <div class="contentt bg-[#FEB786] h-[330px] mt-2 flex justify-between">
               <div>
                 <img src={div4} alt="" />
               </div>

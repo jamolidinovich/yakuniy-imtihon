@@ -106,7 +106,6 @@ function Home() {
       .then((data) => {
         setData(data);
         setLoading(false);
-        console.log(data);
       })
       .catch((err) => {
         console.log(err);

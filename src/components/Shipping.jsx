@@ -50,7 +50,7 @@ function Shipping({ filterValue }) {
                   <img
                     className="w-[150px] h-[150px] ml-[30px] "
                     src={el.images[0]}
-                    alt=""
+                    alt={el.name}
                   />
                 </div>
                 <p className=" text-xl mt-1 text-[#191919] font-bold">
