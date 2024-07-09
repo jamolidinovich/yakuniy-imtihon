@@ -1,0 +1,82 @@
+/* .dis {
+  display: none;
+} */
+
+/* App.css */
+
+@keyframes loadingAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.loader {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20%;
+  color: #3498db; /* You can customize the color */
+  animation: loadingAnimation 1.5s infinite;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  transition: transform 1s ease;
+  width: 400%;
+  animation: slide 30s infinite;
+}
+
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(0%);
+  }
+  30% {
+    transform: translateX(-100%);
+  }
+  55% {
+    transform: translateX(-100%);
+  }
+  60% {
+    transform: translateX(-200%);
+  }
+  85% {
+    transform: translateX(-200%);
+  }
+  90% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(-300%);
+  }
+}
