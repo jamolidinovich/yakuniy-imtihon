@@ -827,7 +827,7 @@
 // export default AllHeader;
 
 import React, { useEffect, useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { addItem, removeItem } from "../Redux/cartSlice";
 import qungiroq from "../assets/qungiroq.svg";
@@ -857,6 +857,7 @@ function AllHeader({ data, setSearchValue, setFilterValue, filterValue }) {
     0
   );
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const watchlistItems = useSelector((state) => state.watchlist.items);
   useEffect(() => {
     const uniqueCategories = [
@@ -904,6 +905,9 @@ function AllHeader({ data, setSearchValue, setFilterValue, filterValue }) {
       navigate(`/pdp/${selectedItem.id}`);
     }
   };
+  function handleClick() {
+    navigate("/");
+  }
   return (
     <div>
       <div className="ml-[auto] mr-[auto] w-[1500px] ">
@@ -921,8 +925,8 @@ function AllHeader({ data, setSearchValue, setFilterValue, filterValue }) {
             <p className="signin">
               or
               <NavLink
-                className="underline signin text-[#0654BA] font-[ABeeZee] font-normal size-[12px]"
-                to={"/signin"}
+                className="underline signin ml-2 text-[#0654BA] font-[ABeeZee] font-normal size-[12px]"
+                to={"/signup"}
               >
                 register
               </NavLink>
@@ -1006,7 +1010,12 @@ function AllHeader({ data, setSearchValue, setFilterValue, filterValue }) {
         </div>
         <hr className="w-[1248px] m-[auto] text-[#E5E5E5] mt-1" />
         <div className="flex items-center w-[1248px]  m-[auto]">
-          <img src={logo} alt="" />
+          <img
+            className="cursor-pointer"
+            onClick={handleClick}
+            src={logo}
+            alt=""
+          />
           <select className=" flex items-center cursor-pointer  ">
             <option className="w-[50px] " value="">
               Shop by category

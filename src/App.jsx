@@ -6,6 +6,7 @@ import Pdp from "./pages/Pdp";
 import Signin from "./pages/Signin";
 import Error from "./pages/Error";
 import "./App.css";
+import Signup from "./pages/Signup";
 function App() {
   return (
     <Routes>
@@ -13,7 +14,7 @@ function App() {
       <Route path="/plp" element={<Plp></Plp>}></Route>
       <Route path="/pdp/:id" element={<Pdp></Pdp>}></Route>
       <Route path="signin" element={<Signin></Signin>}></Route>
-
+      <Route path="signup" element={<Signup></Signup>}></Route>
       <Route path="*" element={<Error></Error>}></Route>
     </Routes>
   );

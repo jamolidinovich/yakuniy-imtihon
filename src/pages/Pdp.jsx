@@ -373,9 +373,11 @@ function Pdp() {
 
   function handelAdd() {
     dispatch(addItem({ ...product, quantity: selectedQuantity }));
+    alert("Malumotlar cardga qushildi");
   }
   function handelTo() {
     dispatch(addToWatchlist(product));
+    alert("Malumotlar watchlistga saqlandi");
   }
   return (
     <div>
