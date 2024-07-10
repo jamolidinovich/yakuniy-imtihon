@@ -130,12 +130,6 @@ const Signin = () => {
           {error && <p style={{ color: "red" }}>{error}</p>}
         </form>
       </div>
-      <hr className="border mt-[200px]" />
-      <Link className="text-center block mt-16">
-        Copyright © 1995-2023 eBay Inc. All Rights Reserved. Accessibility .User
-        Agreement Privacy Payments Terms of Use Cookies Your Privacy Choices and
-        AdChoice
-      </Link>
     </div>
   );
 };

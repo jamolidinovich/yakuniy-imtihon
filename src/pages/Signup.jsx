@@ -143,12 +143,6 @@ const Signup = () => {
           </Link>
         </form>
       </div>
-      <hr className="border mt-[150px]" />
-      <Link className="text-center block mt-16">
-        Copyright © 1995-2023 eBay Inc. All Rights Reserved. Accessibility .User
-        Agreement Privacy Payments Terms of Use Cookies Your Privacy Choices and
-        AdChoice
-      </Link>
     </div>
   );
 };

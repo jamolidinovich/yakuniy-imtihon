@@ -1,11 +1,10 @@
-// src/components/Loader.js
 import React from "react";
-import "./Loader.css"; // Create and style this CSS file as needed
+import "./Loader.css"; // Loader uchun CSS faylni ulaymiz
 
 const Loader = () => {
   return (
-    <div className="loader">
-      <div className="spinner"></div>
+    <div className="loader-container">
+      <div className="loader"></div>
     </div>
   );
 };

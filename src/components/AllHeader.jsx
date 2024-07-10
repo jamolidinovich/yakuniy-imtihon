@@ -913,40 +913,42 @@ function AllHeader({ data, setSearchValue, setFilterValue, filterValue }) {
       <div className="ml-[auto] mr-[auto] w-[1500px] ">
         <div className="flex items-center w-[1248px] justify-between ml-[auto] mr-[auto] ">
           <div className="flex items-center">
-            <p className="signin">
-              Hi!
-              <NavLink
-                className=" signin underline text-[#0654BA] font-[ABeeZee] font-normal ml-1 mr-2 size-[12px]"
-                to={"/signin"}
-              >
-                Sign in
-              </NavLink>
-            </p>
-            <p className="signin">
-              or
-              <NavLink
-                className="underline signin ml-2 text-[#0654BA] font-[ABeeZee] font-normal size-[12px]"
-                to={"/signup"}
-              >
-                register
-              </NavLink>
-            </p>
+            <div className="flex mt-[-4px]">
+              <p className="signin daily  items-center">
+                <p className="inline-block">Hi!</p>
+                <Link
+                  className="signin  border-b border-[#0654BA] daily text-[#0654BA] ml-1 mr-2"
+                  to={"/signin"}
+                >
+                  Sign in
+                </Link>
+              </p>
+              <p className="signin daily">
+                or
+                <NavLink
+                  className="border-b border-[#0654BA] signin ml-2 text-[#0654BA] font-[ABeeZee] font-normal size-[12px]"
+                  to={"/signup"}
+                >
+                  register
+                </NavLink>
+              </p>
+            </div>
             <div className="gap-[26px] flex ml-[30px]">
-              <Link className=" linkfont-[ABeeZee] font-normal ">
+              <Link className="daily linkfont-[ABeeZee] font-normal ">
                 Daily Deals
               </Link>
-              <Link className=" linkfont-[ABeeZee] font-normal">
+              <Link className="daily linkfont-[ABeeZee] font-normal">
                 Daily Deals
               </Link>
-              <Link className=" linkfont-[ABeeZee] font-normal">
+              <Link className="daily linkfont-[ABeeZee] font-normal">
                 Help & Contact
               </Link>
             </div>
           </div>
-          <div className="flex right-nav">
-            <Link className="mt-[12px]">Sell</Link>
+          <div className="flex right-nav items-center">
+            <p className="daily pt-[1px]">Sell</p>
             <select
-              className="headerSelect"
+              className="headerSelect daily"
               name=""
               id=""
               onChange={handleWatchlistSelect}
@@ -958,10 +960,12 @@ function AllHeader({ data, setSearchValue, setFilterValue, filterValue }) {
                 </option>
               ))}
             </select>
-            <select className="headerSelect" name="" id="">
+            <select className="headerSelect daily" name="" id="">
               <option value=""> My eBay</option>
             </select>
-            <img className="cursor-pointer" src={qungiroq} alt="" />
+            <button className="btn border-none bg-transparent ml-[-10px]">
+              <img className="cursor-pointer" src={qungiroq} alt="" />
+            </button>
             <button
               className="btn border-none bg-transparent ml-[-10px]"
               onClick={() => document.getElementById("my_modal_2").showModal()}
@@ -1016,7 +1020,7 @@ function AllHeader({ data, setSearchValue, setFilterValue, filterValue }) {
             src={logo}
             alt=""
           />
-          <select className=" flex items-center cursor-pointer  ">
+          <select className=" daily flex items-center cursor-pointer  ">
             <option className="w-[50px] " value="">
               Shop by category
             </option>
@@ -1027,6 +1031,7 @@ function AllHeader({ data, setSearchValue, setFilterValue, filterValue }) {
               <img src={search} alt="" />
             </div>
             <input
+              className="daily"
               type="text"
               placeholder="Search for anything"
               value={searchInput}
@@ -1035,7 +1040,7 @@ function AllHeader({ data, setSearchValue, setFilterValue, filterValue }) {
 
             <select
               value={filterValue}
-              className="cursor-pointer"
+              className="cursor-pointer daily"
               onChange={(e) => setFilterValue(e.target.value)}
             >
               <option value="">All Categories</option>
@@ -1047,8 +1052,8 @@ function AllHeader({ data, setSearchValue, setFilterValue, filterValue }) {
                 ))}
             </select>
           </div>
-          <button className="searchBtn">Search</button>
-          <p className="Advanced">Advanced</p>
+          <button className="searchBtn daily">Search</button>
+          <p className="Advanced daily">Advanced</p>
         </div>
       </div>
     </div>

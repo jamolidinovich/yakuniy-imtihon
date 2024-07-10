@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import "./ProductList.css";
+import "./AllHeader.css";
 
 function ProductList({ data }) {
   return (

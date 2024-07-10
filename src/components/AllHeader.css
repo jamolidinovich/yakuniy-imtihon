@@ -293,26 +293,11 @@
   margin-top: 0.5rem;
 }
 
-/* .mt-[30px] {
-  margin-top: 30px;
+.daily {
+  font-family: ABeeZee;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 12px;
+  text-align: left;
+  margin-top: 3px;
 }
-
-.h-[330px] {
-  height: 330px;
-}
-
-.w-[150px] {
-  width: 150px;
-}
-
-.w-[332px] {
-  width: 332px;
-}
-
-.pl-[32px] {
-  padding-left: 32px;
-}
-
-.pt-[16px] {
-  padding-top: 16px;
-} */

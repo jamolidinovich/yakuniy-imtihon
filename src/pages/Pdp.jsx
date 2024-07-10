@@ -388,7 +388,7 @@ function Pdp() {
             <img src={exit} alt="exit" />
           </Link>
           <Link className="Back">Back to home page</Link>
-          <Link>| Listed in category:</Link>
+          <Link className="back">| Listed in category:</Link>
           <Link className="Back">Electronics</Link>
           <Link className="Back">Cell Phones & Accessories</Link>
           <Link className="Back">Cell Phones & Smartphones</Link>
@@ -404,7 +404,7 @@ function Pdp() {
             EXTRA <h1 className="text-[red] ml-2 mr-2">$10</h1>OFF 3+ ITEMS WITH
             CODE <h1 className="text-[red] ml-2 mr-2">10OFF2023TECH</h1>
           </h1>
-          <p className="mt-2 ml-7 Back font-bold">
+          <p className=" ml-7 text-[#0654BA] text-xl">
             See all eligible items and terms
           </p>
         </div>

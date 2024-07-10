@@ -17,22 +17,7 @@ function Super() {
   return (
     <div className="w-[1312px] m-[auto]">
       <hr className="text-[#DDDDDD] mb-2 mt-[52px]" />
-      {/* <div className="justify-between saved flex">
-        <Link className="ml-[35px]">Home</Link>
-        <Link className="flex items-center gap-[2px]">
-          <img className="mt-[3px]" src={love} alt="" /> Saved
-        </Link>
-        <Link>Motors</Link>
-        <Link>Electronics</Link>
-        <Link>Collectibles</Link>
-        <Link>Home & Garden</Link>
-        <Link>Fashion</Link>
-        <Link>Sporting Goods</Link>
-        <Link>Business & Industrial</Link>
-        <Link>Jewelry & Watches</Link>
-        <Link>eBay</Link>
-        <Link className="mr-[32px]">Refurbished</Link>
-      </div> */}
+
       <div className="justify-between saved flex">
         <Link
           className={`ml-[35px] ${activeLink === "home" ? "active" : ""}`}

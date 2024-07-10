@@ -265,14 +265,20 @@ function Plp() {
                   src={product.img}
                   alt={product.name}
                 />
-                <p className="mb-2 text-[14px] text-[#111820]">
+                <p className="productname mb-1 text-[14px] text-[#111820]">
                   {product.name}
                 </p>
-                <span>{product.color || ""} </span>
-                <h3 className="text-[#111820] font-bold">{product.price}</h3>
+                <span className="productcolor">
+                  {product.color || "Rang mavjud emas"}{" "}
+                </span>
+                <h3 className="text-[#111820] mt-1 font-bold productprice">
+                  {product.price}
+                </h3>
                 <span className="text-[#DD1E31]">{product.sold}</span>
-                <span className="block mt-2">{product.oldPrice}</span>
-                <span> {product.free}</span>
+                <span className="block mt-2 productold">
+                  {product.oldPrice}
+                </span>
+                <span className="productold"> {product.free}</span>
                 <span className="flex ">
                   {" "}
                   <img src={span} alt="" />
@@ -284,7 +290,7 @@ function Plp() {
                 <span
                   onClick={() => handleLike(product.id)}
                   style={{ cursor: "pointer" }}
-                  className="block w-[28px] h-[28px] border rounded-full pl-[2px]"
+                  className=" w-[28px] h-[28px] border justify-center items-center flex rounded-full "
                 >
                   {likedProducts[product.id] ? "💙" : "🤍"}
                 </span>
